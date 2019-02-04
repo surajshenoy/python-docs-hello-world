@@ -6,16 +6,16 @@
 trigger:
     - master
 
-    pool:
-        vmImage: 'Ubuntu-16.04'
+pool:
+  vmImage: 'Ubuntu-16.04'
 
-    steps:
-    - task: ArchiveFiles@1
-      displayName: Archive files
-      inputs:
-        rootFolder: $(System.DefaultWorkingDirectory)
-        includeRootFolder: false
-        archiveType: zip
+steps:
+- task: ArchiveFiles@1
+  displayName: Archive files
+  inputs:
+    rootFolder: $(System.DefaultWorkingDirectory)
+    includeRootFolder: false
+    archiveType: zip
 
-    - task: PublishBuildArtifacts@1
-      displayName: Publish Artifact
+- task: PublishBuildArtifacts@1
+  displayName: Publish Artifact
