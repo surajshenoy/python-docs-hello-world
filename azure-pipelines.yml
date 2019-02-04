@@ -28,5 +28,5 @@ steps:
   inputs:
     azureSubscription: $(azureSubscription)
     appType: webAppLinux
-    appName: pythonsampleapp
+    appName: pythonsjdemoapp1
     package: $(build.artifactstagingdirectory)/**/*.zip
